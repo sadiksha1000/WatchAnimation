@@ -53,12 +53,11 @@ class ClockTextMarker extends StatelessWidget {
     const height = 30.0;
     return Transform(
       alignment: Alignment.center,
-      transform: Matrix4.identity(),
-      // transform: Matrix4.identity()
-      //   ..translate(width * 3.8, height * 3.8, 0)
-      //   ..rotateZ(pi + 2 * pi * (value / maxValue))
-      //   ..translate(0.0, radius - 35, 0.0)
-      //   ..rotateZ(pi - 2 * pi * (value / maxValue)),
+      transform: Matrix4.identity()
+        ..translate(-width / 2, -height / 2, 0.0)
+        ..rotateZ(pi + 2 * pi * (value / maxValue))
+        ..translate(0.0, radius - 35, 0.0)
+        ..rotateZ(pi - 2 * pi * (value / maxValue)),
       child: SizedBox(
         width: width,
         height: height,

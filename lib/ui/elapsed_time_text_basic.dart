@@ -14,7 +14,7 @@ class ElapsedTimeTextBasic extends StatelessWidget {
     final secondsStr = seconds.toString().padLeft(2, '0');
     final minutesStr = minutes.toString().padLeft(2, '0');
     return Text(
-      '$minutesStr:$secondsStr.$hundredsStr',
+      '$minutesStr : $secondsStr.$hundredsStr',
       textAlign: TextAlign.center,
       style: TextStyle(fontSize: 40),
     );
